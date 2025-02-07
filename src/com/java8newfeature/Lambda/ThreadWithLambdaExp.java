@@ -1,14 +1,15 @@
-package com.java8newfeature;
+package com.java8newfeature.Lambda;
 
-public class ThreadWithLambdaArgs {
+public class ThreadWithLambdaExp {
     public static void main(String[] args) {
-        Thread t = new Thread(() -> {
+        Runnable r = () -> {
             for (int i = 0; i < 10; i++) {
                 System.out.println("Child Thread");
             }
-        });
+        };
+        Thread t = new Thread(r);
         t.start();
-        for (int j = 0; j < 10; j++) {
+        for (int i = 0; i < 10; i++) {
             System.out.println("Main Thread");
         }
     }

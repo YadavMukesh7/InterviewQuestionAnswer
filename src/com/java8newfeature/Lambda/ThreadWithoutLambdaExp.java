@@ -1,4 +1,4 @@
-package com.java8newfeature;
+package com.java8newfeature.Lambda;
 
 class ThreadWithoutLambdaExp implements Runnable {
 

@@ -1,6 +1,6 @@
-package com.java8newfeature;
+package com.java8newfeature.MethodAndConstructorReference;
 
-public class ThreadWithLambdaExp {
+public class ByLambda {
     public static void main(String[] args) {
         Runnable r = () -> {
             for (int i = 0; i < 10; i++) {
@@ -9,7 +9,7 @@ public class ThreadWithLambdaExp {
         };
         Thread t = new Thread(r);
         t.start();
-        for (int i = 0; i < 10; i++) {
+        for(int j=0; j<10; j++){
             System.out.println("Main Thread");
         }
     }

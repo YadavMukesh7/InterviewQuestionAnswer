@@ -1,4 +1,4 @@
-package com.java8newfeature;
+package com.java8newfeature.Lambda;
 
 public class ThreadWithAnonymousClass {
     public static void main(String[] args) {
