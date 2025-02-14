@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class FlatMap {
+class FlatMap {
     public static void main(String[] args) {
         List<String> city1 = new ArrayList<>();
         city1.add("Noida");
@@ -43,7 +43,7 @@ public class FlatMap {
     }
 }
 
-class Employee {
+public class Employee {
     private int id;
     private String name;
     private List<String> city;
