@@ -5,14 +5,14 @@ interface Test {
 }
 
 public class Krishna {
-    Test t = new Test() {
-        @Override
-        public void mukesh() {
-            System.out.println("Hare Krishna");
-        }
-    };
     public static void main(String[] args) {
-        Krishna k = new Krishna();
-        k.t.mukesh();
+        //Anonymous inner class implementation
+        Test t = new Test() {
+            @Override
+            public void mukesh() {
+                System.out.println("He Govind !!");
+            }
+        };
+        t.mukesh();
     }
 }

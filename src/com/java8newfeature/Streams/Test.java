@@ -19,9 +19,7 @@ class Test {
         System.out.println(l1);
 
         // Map: Add 10 to each element in the list
-        List<Integer> l2 = l1.stream()
-                .map(i -> i + 10)
-                .collect(Collectors.toList());
+        List<Integer> l2 = l1.stream().map(i -> i + 10).collect(Collectors.toList());
         System.out.println(l2);
 
         // Filter: Count even numbers in the list
@@ -48,6 +46,6 @@ class Test {
         System.out.println(max);
 
         // Print each element in the sorted list using forEach
-        l3.stream().forEach(System.out::println);
+        l3.forEach(System.out::println);
     }
 }
